@@ -80,5 +80,25 @@ public class FizzBuzzTest {
         assertEquals("FizzBuzz", result);
     }
 
+    @Test
+    public void test12() {
+        FizzBuzz test12 = new FizzBuzz();
+        String result = test12.function1(9); //passes
+        assertEquals("Fizz", result);
+    }
+
+    @Test
+    public void test13() {
+        FizzBuzz test13 = new FizzBuzz();
+        String result = test13.function1(12); //passes
+        assertEquals("Fizz", result);
+    }
+
+    @Test
+    public void test14() {
+        FizzBuzz test14 = new FizzBuzz();        //fails
+        String result = test14.function1(1);
+        assertEquals("1", result);
+    }
 
 }
